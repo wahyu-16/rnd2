@@ -81,7 +81,7 @@ $db['default'] = array(
     'database' => 'db_tugas',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
-    'pconnect' => FALSE,
+    'pconnect' => TRUE/FALSE,
     'db_debug' => (ENVIRONMENT !== 'production'),
     'cache_on' => FALSE,
     'cachedir' => '',
