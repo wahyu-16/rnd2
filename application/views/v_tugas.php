@@ -101,7 +101,8 @@
               <label>KETERANGAN</label>
               <input type="text" name="keterangan" class="form-control">
           </div>
-          <button type="reset" class="btn btn-danger" data-dismiss="modal" value="reset">Reset</button>
+          <button type="reset" class="btn btn-danger" value="reset">Reset</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" >kembali</button>
           <button type="submit" class="btn btn-primary">Simpan</button>
 
           </form>

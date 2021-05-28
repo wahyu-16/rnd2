@@ -15,6 +15,7 @@
        }
        public function tambah_aksi(){
            $mata_kuliah = $this->input->post('mata_kuliah');
+           $dosen       = $this->input->post ('dosen');
            $jenis_tugas = $this->input->post('jenis_tugas');
            $nama_tugas  = $this->input->post('nama_tugas');
            $deadline    = $this->input->post('deadline');
@@ -24,6 +25,7 @@
 
            $data = array(
             'mata_kuliah'    => $mata_kuliah,
+            'dosen'          => $dosen,
             'jenis_tugas'    => $jenis_tugas,
             'nama_tugas'     => $nama_tugas,
             'deadline'       => $deadline,
@@ -50,6 +52,7 @@
         public function update(){
             $id = $this->input->post('id');
             $mata_kuliah = $this->input->post('mata_kuliah');
+            $dosen       = $this->input->post ('dosen');
             $jenis_tugas = $this->input->post('jenis_tugas');
             $nama_tugas  = $this->input->post('nama_tugas');
             $deadline    = $this->input->post('deadline');
@@ -59,6 +62,7 @@
 
             $data = array(
                 'mata_kuliah'    => $mata_kuliah,
+                'dosen'          => $dosen,
                 'jenis_tugas'    => $jenis_tugas,
                 'nama_tugas'     => $nama_tugas,
                 'deadline'       => $deadline,
