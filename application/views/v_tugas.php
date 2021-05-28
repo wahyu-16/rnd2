@@ -43,11 +43,11 @@
                 <td><?php echo $jdw->nama_file ?></td>
                 <td><?php echo $jdw->pengumpulan ?></td>
                 <td><?php echo $jdw->keterangan ?></td>
-                <td onClick="confirm('Hapus data <?php echo $jdw->mata_kuliah; echo " - "; echo $jdw->nama_tugas;  ?>?')">
+                <td onClick="return confirm('Hapus data <?php echo $jdw->mata_kuliah; echo " - "; echo $jdw->nama_tugas;  ?>?')">
                         <?php echo anchor('jadwal/hapus/'.$jdw->id, '<button type="button"
                         class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button>'); ?>
                 </td>
-                <td onClick="confirm('ubah data <?php echo $jdw->mata_kuliah; echo " - "; echo $jdw->nama_tugas;  ?>?')">
+                <td onClick="return confirm('ubah data <?php echo $jdw->mata_kuliah; echo " - "; echo $jdw->nama_tugas;  ?>?')">
                         <?php echo anchor('jadwal/edit/'.$jdw->id, '<button type="button"
                         class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>'); ?>
                 </td>
@@ -101,7 +101,7 @@
               <label>KETERANGAN</label>
               <input type="text" name="keterangan" class="form-control">
           </div>
-          <button type="reset" class="btn btn-danger" data-dismiss="modal">Reset</button>
+          <button type="reset" class="btn btn-danger" data-dismiss="modal" value="reset">Reset</button>
           <button type="submit" class="btn btn-primary">Simpan</button>
 
           </form>
